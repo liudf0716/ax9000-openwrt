@@ -6,8 +6,10 @@
 方法网上有教程，可以结合openwrt官方【参考文献中的第8条】和恩山上教程【第6条】，个人觉得openwrt官方的教程更适合开发者，需要注意的是以下几点；
 
 1. 先根据官方的教程，配置好辅助openwrt设备的ip地址，dhcp配置及无线配置，然后重启该设备
-2. 等辅助openwrt设备重启完成后，先登录ax9000设备，获取其stok值，然后用该stok值替代下面的url中的stok值：
-http://192.168.31.1/cgi-bin/luci/;stok=<STOK>/api/xqsystem/extendwifi_connect_inited_router?ssid=<SSID>&password=<PASSWORD>&encryption=<ENCRYPTION>enctype=<ENCTYPE>&channel=<CHANNEL>&band=<BAND>&admin_username=root&admin_password=admin&admin_nonce=xxx
+2. 等辅助openwrt设备重启完成后，先通过浏览器登录ax9000设备，登录成功后获取其stok值:`http://192.168.31.1/cgi-bin/luci/;stok=8cef284c22c6f9853dec7159cc885792/web/home#router`，然后用该stok值替代下面的url中的stok值：
+
+`http://192.168.31.1/cgi-bin/luci/;stok=<STOK>/api/xqsystem/extendwifi_connect_inited_router?ssid=<SSID>&password=<PASSWORD>&encryption=<ENCRYPTION>enctype=<ENCTYPE>&channel=<CHANNEL>&band=<BAND>&admin_username=root&admin_password=admin&admin_nonce=xxx`
+
 3. 将上述url值粘贴到浏览器上，访问该url地址，过一段时间后会返回下列内容：
 ```
 {"token":"; nvram set ssh_en=1; nvram commit; echo -e 'admin\u000aadmin' | passwd root; sed -i 's/channel=.*/channel=\u0022debug\u0022/g' /etc/init.d/dropbear; /etc/init.d/dropbear start;","code":0}
