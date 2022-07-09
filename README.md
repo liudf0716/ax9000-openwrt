@@ -67,11 +67,65 @@ mtd28: 03013000 0001f000 "data"
 root@XiaoQiang:~#  
 ```
 
-dmesg内容
+cpuinfo
 ```
-  
+root@XiaoQiang:~# cat /proc/cpuinfo
+processor	: 0
+BogoMIPS	: 38.40
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+BogoMIPS	: 38.40
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 2
+BogoMIPS	: 38.40
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 3
+BogoMIPS	: 38.40
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: Qualcomm Technologies, Inc. IPQ807x/AP-HK14
 ```
-  
+
+uname -a
+```
+root@XiaoQiang:~# uname -a
+Linux XiaoQiang 4.4.60 #0 SMP PREEMPT Fri May 28 09:24:35 2021 aarch64 GNU/Linux
+```
+
+```
+root@XiaoQiang:~# cat /etc/openwrt_release
+DISTRIB_ID='OpenWrt'
+DISTRIB_RELEASE='18.06-SNAPSHOT'
+DISTRIB_REVISION='unknown'
+DISTRIB_TARGET='ipq/ipq807x_64'
+DISTRIB_ARCH='aarch64_cortex-a53'
+DISTRIB_DESCRIPTION='OpenWrt 18.06-SNAPSHOT unknown'
+DISTRIB_TAINTS='no-all busybox'
+```
+
 ## 参考文献
 1. https://opssh.cn/luyou/166.html
 2. https://forum.openwrt.org/t/openwrt-support-for-xiaomi-ax9000/98908
