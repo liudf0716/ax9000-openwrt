@@ -135,5 +135,6 @@ DISTRIB_TAINTS='no-all busybox'
 6. https://supes.top/%e7%ba%a2%e7%b1%b3ax6-%e8%a7%a3%e9%94%81ssh%e5%88%b7u-boot%e4%b8%8eopenwrt%e6%95%99%e7%a8%8b/
 7. https://www.right.com.cn/forum/thread-8234200-1-2.html
 8. https://openwrt.org/inbox/toh/xiaomi/ax9000
+9. https://zhuanlan.zhihu.com/p/427734325
 
 
