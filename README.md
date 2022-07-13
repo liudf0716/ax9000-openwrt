@@ -136,5 +136,6 @@ DISTRIB_TAINTS='no-all busybox'
 7. https://www.right.com.cn/forum/thread-8234200-1-2.html
 8. https://openwrt.org/inbox/toh/xiaomi/ax9000
 9. https://zhuanlan.zhihu.com/p/427734325
+10. https://web.vip.miui.com/page/info/mio/mio/detail?postId=19134127&app_version=dev.20051
 
 
